@@ -84,6 +84,9 @@
         "enabled": true
     },
     "utilities": {
+        "cards": {
+            "keepAwake": false
+        },
         "quickToggles": [
             {
                 "enabled": true,
@@ -113,6 +116,32 @@
                 "enabled": false,
                 "id": "vpn"
             }
-        ]
+        ],
+        "vpn": {
+            "enabled": false,
+            "provider": [
+                {
+                    "connectCmd": [
+                        "nmcli",
+                        "connection",
+                        "up",
+                        "\"ProtonVPN",
+                        "US-FREE#103\""
+                    ],
+                    "disconnectCmd": [
+                        "nmcli",
+                        "connection",
+                        "down",
+                        "\"ProtonVPN",
+                        "US-FREE#103\""
+                    ],
+                    "displayName": "Proton VPN",
+                    "id": "vpn-msu28c1a-2nx8j",
+                    "interface": "proton0",
+                    "name": "proton"
+                }
+            ],
+            "selectedProvider": "vpn-msu28c1a-2nx8j"
+        }
     }
 }

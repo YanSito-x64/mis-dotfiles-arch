@@ -2,14 +2,6 @@
 
 -- Monitors
 hl.monitor({
-    output = "HDMI-A-1",
-    disabled = false,
-    mode = "1920x1080@75.00Hz",
-    position = "auto",
-    scale = 1,
-    cm = "srgb",
-})
-hl.monitor({
     output = "eDP-1",
     disabled = false,
     mode = "1920x1080@60.01Hz",
