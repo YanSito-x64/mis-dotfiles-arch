@@ -53,6 +53,9 @@
             "occupiedBg": false
         }
     },
+    "launcher": {
+        "showOnHover": false
+    },
     "services": {
         "useFahrenheit": false
     },
@@ -85,8 +88,10 @@
     },
     "utilities": {
         "cards": {
-            "keepAwake": false
+            "keepAwake": true,
+            "quickToggles": true
         },
+        "enabled": true,
         "quickToggles": [
             {
                 "enabled": true,
@@ -113,8 +118,12 @@
                 "id": "dnd"
             },
             {
-                "enabled": false,
+                "enabled": true,
                 "id": "vpn"
+            },
+            {
+                "enabled": true,
+                "id": "nightMode"
             }
         ],
         "vpn": {
