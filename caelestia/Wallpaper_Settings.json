@@ -1,6 +1,6 @@
 {
     "disableAnimations": false,
-    "animationDuration": 1000,
+    "animationDuration": 750,
     "behaviorEnabled": true,
     "batteryLimitEnabled": true,
     "batteryLimit": 40,

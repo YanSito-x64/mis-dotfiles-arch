@@ -9,7 +9,8 @@
     },
     "bar": {
         "activeWindow": {
-            "compact": false
+            "compact": false,
+            "inverted": false
         },
         "clock": {
             "background": false,
@@ -22,11 +23,11 @@
                 "id": "lockStatus"
             },
             {
-                "enabled": false,
+                "enabled": true,
                 "id": "audio"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "microphone"
             },
             {
@@ -47,6 +48,7 @@
             }
         ],
         "tray": {
+            "background": false,
             "recolour": true
         },
         "workspaces": {
@@ -54,7 +56,13 @@
         }
     },
     "launcher": {
-        "showOnHover": false
+        "enabled": true,
+        "showOnHover": false,
+        "useFuzzy": {
+            "actions": false,
+            "schemes": false,
+            "wallpapers": false
+        }
     },
     "services": {
         "useFahrenheit": false
