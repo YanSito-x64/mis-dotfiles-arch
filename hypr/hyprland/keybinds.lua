@@ -198,3 +198,9 @@ hl.bind("XF86NotificationCenter", hl.dsp.exec_cmd("flatpak run md.obsidian.Obsid
 
 --Favoritos
 hl.bind("XF86Favorites", hl.dsp.window.move({ workspace = "special:special" }))
+
+-- OCR / Reverse Image Search
+hl.bind("SUPER + O", hl.dsp.exec_cmd("/home/yans/.local/bin/grim-search"))
+
+-- OCR / Copy to clipboard
+hl.bind("SUPER + p", hl.dsp.exec_cmd("/home/yans/.local/bin/grim-ocr -c"))
