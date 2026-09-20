@@ -201,6 +201,3 @@ hl.bind("XF86Favorites", hl.dsp.window.move({ workspace = "special:special" }))
 
 -- OCR / Reverse Image Search
 hl.bind("SUPER + O", hl.dsp.exec_cmd("/home/yans/.local/bin/grim-search"))
-
--- OCR / Copy to clipboard
-hl.bind("SUPER + p", hl.dsp.exec_cmd("/home/yans/.local/bin/grim-ocr -c"))
