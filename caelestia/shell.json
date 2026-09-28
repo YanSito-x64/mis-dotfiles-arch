@@ -55,6 +55,9 @@
             "occupiedBg": false
         }
     },
+    "dashboard": {
+        "showClockSeconds": false
+    },
     "launcher": {
         "actionPrefix": ">",
         "enabled": true,
@@ -69,6 +72,7 @@
         "clockFormat": "Auto",
         "dataUnits": "Binary",
         "sensorUnits": "Celsius",
+        "smartScheme": true,
         "weatherUnits": "Celsius"
     },
     "session": {
