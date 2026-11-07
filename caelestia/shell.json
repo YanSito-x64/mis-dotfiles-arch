@@ -1,14 +1,79 @@
 {
+    "appearance": {
+        "transparency": {
+            "enabled": false
+        }
+    },
+    "background": {
+        "wallpaperEnabled": true
+    },
     "bar": {
-        "status": {
-            "showMicrophone": true
+        "activeWindow": {
+            "compact": false,
+            "inverted": false
         },
+        "clock": {
+            "background": false,
+            "showDate": false
+        },
+        "persistent": false,
+        "statusIcons": [
+            {
+                "enabled": true,
+                "id": "lockStatus"
+            },
+            {
+                "enabled": true,
+                "id": "audio"
+            },
+            {
+                "enabled": false,
+                "id": "microphone"
+            },
+            {
+                "enabled": false,
+                "id": "kbLayout"
+            },
+            {
+                "enabled": true,
+                "id": "network"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "battery"
+            }
+        ],
         "tray": {
+            "background": false,
             "recolour": true
+        },
+        "workspaces": {
+            "occupiedBg": false
+        }
+    },
+    "dashboard": {
+        "showClockSeconds": false
+    },
+    "launcher": {
+        "actionPrefix": ">",
+        "enabled": true,
+        "showOnHover": false,
+        "useFuzzy": {
+            "actions": false,
+            "schemes": false,
+            "wallpapers": false
         }
     },
     "services": {
-        "useFahrenheit": false
+        "clockFormat": "Auto",
+        "dataUnits": "Binary",
+        "sensorUnits": "Celsius",
+        "smartScheme": true,
+        "weatherUnits": "Celsius"
     },
     "session": {
         "commands": {
@@ -33,5 +98,75 @@
         "dragThreshold": 30,
         "enabled": true,
         "vimKeybinds": false
+    },
+    "sidebar": {
+        "enabled": true
+    },
+    "utilities": {
+        "cards": {
+            "keepAwake": true,
+            "quickToggles": true
+        },
+        "enabled": true,
+        "quickToggles": [
+            {
+                "enabled": true,
+                "id": "wifi"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "mic"
+            },
+            {
+                "enabled": true,
+                "id": "settings"
+            },
+            {
+                "enabled": true,
+                "id": "gameMode"
+            },
+            {
+                "enabled": true,
+                "id": "dnd"
+            },
+            {
+                "enabled": true,
+                "id": "vpn"
+            },
+            {
+                "enabled": true,
+                "id": "nightMode"
+            }
+        ],
+        "vpn": {
+            "enabled": false,
+            "provider": [
+                {
+                    "connectCmd": [
+                        "nmcli",
+                        "connection",
+                        "up",
+                        "\"ProtonVPN",
+                        "US-FREE#103\""
+                    ],
+                    "disconnectCmd": [
+                        "nmcli",
+                        "connection",
+                        "down",
+                        "\"ProtonVPN",
+                        "US-FREE#103\""
+                    ],
+                    "displayName": "Proton VPN",
+                    "id": "vpn-msu28c1a-2nx8j",
+                    "interface": "proton0",
+                    "name": "proton"
+                }
+            ],
+            "selectedProvider": "vpn-msu28c1a-2nx8j"
+        }
     }
 }

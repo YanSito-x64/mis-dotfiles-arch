@@ -1,0 +1,5 @@
+{
+  "theme": {
+    "postHook": "~/.local/bin/posthook.sh"
+  }
+}

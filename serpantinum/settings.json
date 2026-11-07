@@ -1,0 +1,241 @@
+{
+  "general": {
+    "location": {
+      "ip": "2806:2f0:9585:f3f2:62d8:8bc7:d355:d65a",
+      "latitude": 19.42847,
+      "longitude": -99.12761,
+      "city": "Mexico City",
+      "region": "Mexico City",
+      "region_code": "CMX",
+      "country_name": "Mexico",
+      "country_code": "MX",
+      "postal": "07839",
+      "timezone": "America/Mexico_City",
+      "utc_offset": "-0600",
+      "currency": "MXN",
+      "languages": "es-MX",
+      "asn": "AS17072",
+      "org": "TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V.",
+      "source": "ipapi.co",
+      "updated_at": 1794041111
+    },
+    "language": "es",
+    "avatarPath": "/home/yans/Pictures/Porfile/Porfile.jpeg",
+    "muteSfx": false,
+    "sfxVolume": 100,
+    "quickactions": true,
+    "weatherInterval": 15,
+    "weatherUnit": "metric"
+  },
+  "notifications": {
+    "dnd": false,
+    "position": "top right",
+    "horizontalPosition": 88,
+    "verticalPosition": 15,
+    "sound": true,
+    "soundFile": "/home/yans/.local/share/serpantinum/src/assets/sounds/notifications/Wobbly.mp3",
+    "showEmptyGraphic": true,
+    "rightClickClose": true
+  },
+  "launcher": {
+    "position": "top",
+    "width": 600,
+    "itemCount": 6,
+    "terminalCommand": "kitty -e",
+    "smartRanking": true,
+    "searchProvider": "google"
+  },
+  "dock": {
+    "enabled": true,
+    "position": "top",
+    "onTop": true,
+    "elementSize": 42,
+    "floating": false,
+    "background": true,
+    "exclusive": false,
+    "autohide": true,
+    "smartAutohide": false,
+    "autohideTimeout": 1250,
+    "editing": false,
+    "apps": [
+      {
+        "name": "Zen Browser",
+        "comment": "A fast, private and secure web browser built to improve your day-to-day experience.",
+        "desktop_id": "zen",
+        "icon": "zen-browser"
+      },
+      {
+        "name": "Obsidian",
+        "comment": "Obsidian",
+        "desktop_id": "md.obsidian.Obsidian",
+        "icon": "md.obsidian.Obsidian"
+      },
+      {
+        "name": "VSCodium",
+        "comment": "Code Editing. Redefined.",
+        "desktop_id": "codium",
+        "icon": "vscodium"
+      },
+      {
+        "name": "Steam",
+        "comment": "Application for managing and playing games on Steam",
+        "desktop_id": "steam",
+        "icon": "steam"
+      },
+      {
+        "name": "NVIDIA GeForce NOW",
+        "comment": "",
+        "desktop_id": "com.nvidia.geforcenow",
+        "icon": "com.nvidia.geforcenow"
+      },
+      {
+        "name": "Equibop",
+        "comment": "",
+        "desktop_id": "equibop",
+        "icon": "equibop"
+      },
+      {
+        "name": "Spotify",
+        "comment": "",
+        "desktop_id": "spotify",
+        "icon": "spotify-client"
+      }
+    ],
+    "overrideBoundsCorrection": false,
+    "enableScrolling": false,
+    "visibleElements": 7,
+    "hoverScale": 118,
+    "cascadeScale": false,
+    "focusRunning": true,
+    "showRunningIndicators": true,
+    "showRunningApps": true,
+    "runningScope": "auto"
+  },
+  "display": {
+    "monitors": {
+      "eDP-1": {
+        "enabled": false
+      },
+      "HDMI-A-1": {
+        "powerEnabled": true,
+        "enabled": false
+      }
+    }
+  },
+  "bar": {
+    "position": "bottom",
+    "width": 74,
+    "height": 46,
+    "style": "fill",
+    "distinctPills": true,
+    "centerByEdges": true,
+    "time": {
+      "format": "HH:mm:ss"
+    },
+    "autohide": true,
+    "autohideTimeout": 600,
+    "groupColors": {
+      "g_kb": "#cba6f7"
+    },
+    "modules": {
+      "left": [
+        "workspaces",
+        "media"
+      ],
+      "center": [
+        "timedate",
+        "info",
+        "sysmon"
+      ],
+      "right": [
+        "tray",
+        [
+          "kb",
+          "wifi",
+          "bt",
+          "vol",
+          "bat"
+        ]
+      ]
+    },
+    "menuStyle": "icon",
+    "workspacesStyle": "pills",
+    "sysmonStyle": "wave",
+    "batStyle": "classic",
+    "workspaceCount": 5
+  },
+  "idle": {
+    "manualInhibit": false,
+    "caffeineStartTime": 0,
+    "caffeineEndTime": 0,
+    "enabled": false
+  },
+  "theme": {
+    "fontFamily": "0xProto Nerd Font",
+    "borderRadius": 8,
+    "elementOpacity": 100,
+    "blurBackground": false,
+    "blurStyle": "blur",
+    "activePreset": "Matugen",
+    "matugen": true,
+    "colors": {
+      "base": "#eeeeee",
+      "blue": "#0087af",
+      "crust": "#d0d0d0",
+      "green": "#87d700",
+      "mantle": "#e4e4e4",
+      "maroon": "#af0000",
+      "mauve": "#8700af",
+      "overlay0": "#a8a8a8",
+      "overlay1": "#878787",
+      "overlay2": "#5f5f5f",
+      "peach": "#d75f00",
+      "pink": "#d70087",
+      "red": "#d70000",
+      "sapphire": "#005f87",
+      "subtext0": "#878787",
+      "subtext1": "#5f5f5f",
+      "surface0": "#e4e4e4",
+      "surface1": "#d0d0d0",
+      "surface2": "#bcbcbc",
+      "teal": "#00a8a8",
+      "text": "#444444",
+      "yellow": "#d7a000"
+    },
+    "apps": [
+      "cava",
+      "fastfetch",
+      "gtk",
+      "kitty",
+      "obsidian",
+      "qt",
+      "vscode",
+      "zen-browser"
+    ]
+  },
+  "wallpaperTransition": {
+    "mode": "custom",
+    "pool": [
+      "circle",
+      "swipe"
+    ],
+    "effects": {
+      "fade": {
+        "duration": 1000
+      },
+      "wipe": {
+        "duration": 1600,
+        "orientation": "random"
+      },
+      "circle": {
+        "duration": 1600,
+        "origin": "random"
+      },
+      "swipe": {
+        "duration": 1600,
+        "direction": "random"
+      }
+    }
+  }
+}
+
