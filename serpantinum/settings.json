@@ -124,8 +124,8 @@
   },
   "bar": {
     "position": "bottom",
-    "width": 74,
-    "height": 46,
+    "width": 70,
+    "height": 48,
     "style": "fill",
     "distinctPills": true,
     "centerByEdges": true,
@@ -234,6 +234,9 @@
       "swipe": {
         "duration": 1600,
         "direction": "random"
+      },
+      "paint": {
+        "duration": 2400
       }
     }
   }
