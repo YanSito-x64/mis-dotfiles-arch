@@ -33,12 +33,12 @@
     "horizontalPosition": 88,
     "verticalPosition": 15,
     "sound": true,
-    "soundFile": "/home/yans/.local/share/serpantinum/src/assets/sounds/notifications/Wobbly.mp3",
+    "soundFile": "/home/yans/.local/share/serpantinum/src/assets/sounds/notifications/Progress.wav",
     "showEmptyGraphic": true,
     "rightClickClose": true
   },
   "launcher": {
-    "position": "top",
+    "position": "center",
     "width": 600,
     "itemCount": 6,
     "terminalCommand": "kitty -e",
@@ -47,10 +47,10 @@
   },
   "dock": {
     "enabled": true,
-    "position": "top",
+    "position": "bottom",
     "onTop": true,
-    "elementSize": 42,
-    "floating": false,
+    "elementSize": 40,
+    "floating": true,
     "background": true,
     "exclusive": false,
     "autohide": true,
@@ -75,6 +75,12 @@
         "comment": "Code Editing. Redefined.",
         "desktop_id": "codium",
         "icon": "vscodium"
+      },
+      {
+        "name": "kitty",
+        "comment": "Fast, feature-rich, GPU based terminal",
+        "desktop_id": "kitty",
+        "icon": "kitty"
       },
       {
         "name": "Steam",
@@ -104,7 +110,7 @@
     "overrideBoundsCorrection": false,
     "enableScrolling": false,
     "visibleElements": 7,
-    "hoverScale": 118,
+    "hoverScale": 120,
     "cascadeScale": false,
     "focusRunning": true,
     "showRunningIndicators": true,
@@ -123,33 +129,36 @@
     }
   },
   "bar": {
-    "position": "bottom",
-    "width": 70,
-    "height": 48,
-    "style": "fill",
+    "position": "top",
+    "width": 100,
+    "height": 38,
+    "style": "modular",
     "distinctPills": true,
     "centerByEdges": true,
     "time": {
-      "format": "HH:mm:ss"
+      "format": "hh:mm AP"
     },
     "autohide": true,
     "autohideTimeout": 600,
     "groupColors": {
-      "g_kb": "#cba6f7"
+      "g_kb": "#cba6f7",
+      "g_tray": "#d2bcfd",
+      "g_sysmon": "#f2be6e"
     },
     "modules": {
       "left": [
         "workspaces",
-        "media"
+        "media",
+        "vis"
       ],
       "center": [
         "timedate",
-        "info",
-        "sysmon"
+        "info"
       ],
       "right": [
-        "tray",
         [
+          "tray",
+          "sysmon",
           "kb",
           "wifi",
           "bt",
@@ -160,9 +169,33 @@
     },
     "menuStyle": "icon",
     "workspacesStyle": "pills",
-    "sysmonStyle": "wave",
-    "batStyle": "classic",
-    "workspaceCount": 5
+    "sysmonStyle": "circle",
+    "batStyle": "text",
+    "workspaceCount": 5,
+    "timeStyle": "material",
+    "timeShowDate": true,
+    "visAlignment": "center",
+    "visContinuous": true,
+    "sysmonStats": [
+      "cpu",
+      "ram",
+      "temp"
+    ],
+    "wifiStyle": "button",
+    "wifiShowName": false,
+    "btShowName": false,
+    "btStyle": "button",
+    "volStyle": "button",
+    "volShowPercent": false,
+    "kbStyle": "button",
+    "mediaInfoMode": "duration",
+    "mediaShowControls": true,
+    "mediaShowIcon": true,
+    "mediaHideWhenIdle": false,
+    "menuItems": [
+      "settings",
+      "launcher"
+    ]
   },
   "idle": {
     "manualInhibit": false,
@@ -203,9 +236,12 @@
       "yellow": "#d7a000"
     },
     "apps": [
+      "btop",
       "cava",
       "fastfetch",
+      "fish",
       "gtk",
+      "kde",
       "kitty",
       "obsidian",
       "qt",
