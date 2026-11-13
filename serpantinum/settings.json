@@ -46,7 +46,7 @@
     "searchProvider": "google"
   },
   "dock": {
-    "enabled": true,
+    "enabled": false,
     "position": "bottom",
     "onTop": true,
     "elementSize": 40,
@@ -124,7 +124,8 @@
       },
       "HDMI-A-1": {
         "powerEnabled": true,
-        "enabled": false
+        "enabled": false,
+        "auto": false
       }
     }
   },
@@ -212,28 +213,28 @@
     "activePreset": "Matugen",
     "matugen": true,
     "colors": {
-      "base": "#eeeeee",
-      "blue": "#0087af",
-      "crust": "#d0d0d0",
-      "green": "#87d700",
-      "mantle": "#e4e4e4",
-      "maroon": "#af0000",
-      "mauve": "#8700af",
-      "overlay0": "#a8a8a8",
-      "overlay1": "#878787",
-      "overlay2": "#5f5f5f",
-      "peach": "#d75f00",
-      "pink": "#d70087",
-      "red": "#d70000",
-      "sapphire": "#005f87",
-      "subtext0": "#878787",
-      "subtext1": "#5f5f5f",
-      "surface0": "#e4e4e4",
-      "surface1": "#d0d0d0",
-      "surface2": "#bcbcbc",
-      "teal": "#00a8a8",
-      "text": "#444444",
-      "yellow": "#d7a000"
+      "base": "#000000",
+      "blue": "#ffffff",
+      "crust": "#000000",
+      "green": "#ffffff",
+      "mantle": "#050505",
+      "maroon": "#808080",
+      "mauve": "#d0d0d0",
+      "overlay0": "#5a5a5a",
+      "overlay1": "#7a7a7a",
+      "overlay2": "#9a9a9a",
+      "peach": "#cccccc",
+      "pink": "#e0e0e0",
+      "red": "#a0a0a0",
+      "sapphire": "#e0e0e0",
+      "subtext0": "#a0a0a0",
+      "subtext1": "#c0c0c0",
+      "surface0": "#1a1a1a",
+      "surface1": "#2a2a2a",
+      "surface2": "#3a3a3a",
+      "teal": "#c0c0c0",
+      "text": "#ffffff",
+      "yellow": "#ffffff"
     },
     "apps": [
       "btop",
@@ -247,7 +248,8 @@
       "qt",
       "vscode",
       "zen-browser"
-    ]
+    ],
+    "mode": "dark"
   },
   "wallpaperTransition": {
     "mode": "custom",
@@ -275,6 +277,15 @@
         "duration": 2400
       }
     }
+  },
+  "lockscreen": {
+    "fingerprintEnabled": true,
+    "attemptLimitEnabled": false,
+    "passwordMaxAttempts": 5,
+    "fingerprintMaxAttempts": 5,
+    "backgroundMode": "follow",
+    "customBackground": "",
+    "promptBackdropMode": "desktop"
   }
 }
 
